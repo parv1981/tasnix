@@ -1,5 +1,5 @@
 # tasnix
-tasnix flask app
+“tasnix flask app”
 
 ## API:
 
@@ -11,7 +11,7 @@ people_state = {'act': 'allen',
                 'qld': 'brett'}
 Your query should accept state as the parameter. 
 4) What would be the corresponding CURL request for the above? – CURL http://127.0.0.1:5000/getName/<state>
-5) Write a second API endpoint that will find the state of an individual from the dict above.  CURL http://127.0.0.1:5000/getState/<name>
+5) Write a second API endpoint that will find the state of an individual from the dict above.  CURL http://127.0.0.1:5000/getState/\<name\>
 
 6) A Pull Request will show us what you have done.
 
@@ -31,7 +31,7 @@ This message should appear:
 
 There are two endpoints exposed for the application.
 
-#### @app.route('/getName/<State>')
+#### @app.route('/getName/\<State\>')
 This endpoint checks for the server status and version string.
 On your browser go to http://127.0.0.1:5000/getName/nsw
 
@@ -41,11 +41,11 @@ sudipta, nikhil
 
 Or one could use
     
-    curl http://127.0.0.1:5000//getName/nsw
+    curl http://127.0.0.1:5000/getName/nsw
 
 If state not present in the dictionary, “State not Found” will be returned.
 
-#### @app.route('/getState/<name>')
+#### @app.route('/getState/\<name\>') 
 This endpoint checks for the server status and version string.
 On your browser go to http://127.0.0.1:5000/getState/sudipta
 
@@ -55,7 +55,7 @@ nsw
 
 Or one could use
     
-    curl http://127.0.0.1:5000//getState/sudipta
+    curl http://127.0.0.1:5000/getState/sudipta
 
 If name not present in the dictionary, “Name not Found” will be returned.
 
