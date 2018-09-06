@@ -18,6 +18,9 @@ Your query should accept state as the parameter.
 
 Notes:
 
+## Packages to be installed:
+1. Flask
+
 ## Run application
 
     python app.py
